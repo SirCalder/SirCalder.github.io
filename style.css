@@ -1,4 +1,8 @@
 /* Configurações Globais e Variáveis de Cor - TEMA ISOLATED GRUNGE */
+
+* {
+    box-sizing: border-box;
+}
 :root {
     /* Paleta de Cores (do mais claro ao mais escuro) */
     --cor-vermelho-brilhante: #bd1202;
@@ -59,17 +63,15 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    right: 50px;
-    width: 50%;
+    width: 100%; /* Agora isso vai funcionar corretamente com o box-sizing */
     display: flex;
     justify-content: flex-end;
-    padding: 20px 500px;
-    background-color: rgba(58, 1, 22, 0.85); /* Fundo com transparência */
+    padding: 20px 40px; /* Seu padding original de volta! */
+    background-color: rgba(58, 1, 22, 0.85);
     backdrop-filter: blur(10px);
     z-index: 100;
     transition: top 0.3s;
 }
-
 .nav-link {
     color: var(--cor-texto-principal);
     text-decoration: none;
