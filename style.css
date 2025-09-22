@@ -144,15 +144,14 @@ header {
     background-color: var(--cor-fundo-card);
     padding: 25px;
     border-radius: 5px;
-    border: 1px solid var(--cor-vinho-escuro);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    border: 2px solid var(--cor-vinho-escuro); /* Borda um pouco mais espessa */
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
 .projeto-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(170, 17, 2, 0.2);
-    border-color: var(--cor-vermelho-medio);
+    transform: translateY(-10px) rotate(1deg); /* Adiciona uma leve rotação */
+    box-shadow: 16px 8px 12px var(--cor-vermelho-brilhante); /* Sombra sólida e colorida */
+    border-color: var(--cor-vermelho-brilhante);
 }
 
 .projeto-card h3 {
